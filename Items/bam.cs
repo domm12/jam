@@ -12,8 +12,8 @@ namespace jam.Items
     {
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("bam");
-			Tooltip.SetDefault("It's a red jam.");
+			DisplayName.SetDefault("Bam");
+			Tooltip.SetDefault("It's a blue jam.");
 		}
         public override void SetDefaults()
         {
@@ -32,14 +32,14 @@ namespace jam.Items
             item.value = 500;//item is the buff duration   
             return;
         }
-        public override void AddRecipes()   //рецепт предмета
+        public override void AddRecipes()   //СЂРµС†РµРїС‚ РїСЂРµРґРјРµС‚Р°
         {
-            ModRecipe recipe = new ModRecipe(mod);  //Создаём новый рецепт
-            recipe.AddIngredient(23, 10);  //Добавляем ингредиенты
-            recipe.AddIngredient(1111, 1);  //Добавляем ингредиенты
-            recipe.AddTile(TileID.WorkBenches);       // На чём предмет крафтится
-            recipe.SetResult(this, 15);             //результат крафта
-            recipe.AddRecipe();              //Заканчиваем рецепт
+            ModRecipe recipe = new ModRecipe(mod);  //РЎРѕР·РґР°С‘Рј РЅРѕРІС‹Р№ СЂРµС†РµРїС‚
+            recipe.AddIngredient(23, 10);  //Р”РѕР±Р°РІР»СЏРµРј РёРЅРіСЂРµРґРёРµРЅС‚С‹
+            recipe.AddIngredient(1111, 1);  //Р”РѕР±Р°РІР»СЏРµРј РёРЅРіСЂРµРґРёРµРЅС‚С‹
+            recipe.AddTile(TileID.WorkBenches);       // РќР° С‡С‘Рј РїСЂРµРґРјРµС‚ РєСЂР°С„С‚РёС‚СЃСЏ
+            recipe.SetResult(this, 15);             //СЂРµР·СѓР»СЊС‚Р°С‚ РєСЂР°С„С‚Р°
+            recipe.AddRecipe();              //Р—Р°РєР°РЅС‡РёРІР°РµРј СЂРµС†РµРїС‚
         }
     }
 }
