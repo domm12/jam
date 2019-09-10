@@ -23,27 +23,18 @@ namespace jam.Projectiles
             projectile.light = 0.5f;
             projectile.tileCollide = true;
             Main.projFrames[projectile.type] = 4;
+            aiType = ProjectileID.DeathSickle;
+            projectile.aiStyle = 18; // Copying AI of Death Sickle
         }
 
         public override void AI()
         {
-            projectile.ai[0] += 1f; // 60 == 1 second
-            if (projectile.ai[1] == null)
-            {
-                projectile.ai[1] = projectile.velocity.X;
-            }
-            //projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
-            
-            if (!(projectile.ai[1] < 0.01f))
-            {
-                projectile.ai[1] -= 0.01f;
-            }
-            projectile.velocity.X = projectile.ai[1];
+            projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
 
-            if (Main.rand.Next(2) == 0) // this is how many duspt particles will spawn
+            /*if (Main.rand.Next(2) == 0) // this is how many duspt particles will spawn
             {// DustID.Fire is a vanilla terrraria dust, change it to what you like. To add a modded dust the change DustID.Fire with mod.DustType("DustName")
                 Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 6, projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
-            }
+            }*/
         }
 
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) //When you hit an NPC
