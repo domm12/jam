@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace jam.Projectiles
 {
-    public class LightShurikenP : ModProjectile
+    public class light_shuriken_projectile : ModProjectile
     {
 
         public override void SetDefaults()
