@@ -35,13 +35,5 @@ namespace jam.Items
             item.shootSpeed = 9f;     //projectile speed
 
         }
-        public override void AddRecipes()  //How to craft this item
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Wood, 1);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-        }
     }
 }
