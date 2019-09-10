@@ -15,7 +15,7 @@ namespace jam.Items
         }
         public override void SetDefaults()
         {
-            item.damage = 20;           //this is the item damage
+            item.damage = 30;           //this is the item damage
             item.thrown = true;             //this make the item do throwing damage
             item.noMelee = true;
             item.width = 38;
@@ -32,16 +32,16 @@ namespace jam.Items
             item.shootSpeed = 8f;     //projectile speed
             item.useTurn = true;
             item.maxStack = 999;       //this is the max stack of this item
-            item.consumable = true;  //this make the item consumable when used
+            item.consumable = false;  //this make the item consumable when used
             item.noUseGraphic = true;
 
         }
         public override void AddRecipes()  //How to craft this item
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(1006, 1);
+            recipe.AddIngredient(1006, 12);
             recipe.AddTile(134);
-            recipe.SetResult(this,50);
+            recipe.SetResult(this,1);
             recipe.AddRecipe();
         }
     }
