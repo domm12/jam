@@ -12,8 +12,8 @@ namespace jam.Items
     {
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("cam");
-			Tooltip.SetDefault("It's a red jam.");
+			DisplayName.SetDefault("Cam");
+			Tooltip.SetDefault("It's a cyanic jam.");
 		}
         public override void SetDefaults()
         {
@@ -32,14 +32,14 @@ namespace jam.Items
             item.value = 500;//item is the buff duration      //this is the buff duration        20000 = 6 min
             return;
         }
-        public override void AddRecipes()   //рецепт предмета
+        public override void AddRecipes()   //Г°ГҐГ¶ГҐГЇГІ ГЇГ°ГҐГ¤Г¬ГҐГІГ 
         {
-            ModRecipe recipe = new ModRecipe(mod);  //Создаём новый рецепт
-            recipe.AddIngredient(23, 10);  //Добавляем ингредиенты
-            recipe.AddIngredient(1116, 1);  //Добавляем ингредиенты
-            recipe.AddTile(TileID.WorkBenches);       // На чём предмет крафтится
-            recipe.SetResult(this, 10);             //результат крафта
-            recipe.AddRecipe();              //Заканчиваем рецепт
+            ModRecipe recipe = new ModRecipe(mod);  //Г‘Г®Г§Г¤Г ВёГ¬ Г­Г®ГўГ»Г© Г°ГҐГ¶ГҐГЇГІ
+            recipe.AddIngredient(23, 10);  //Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГЁГ­ГЈГ°ГҐГ¤ГЁГҐГ­ГІГ»
+            recipe.AddIngredient(1116, 1);  //Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГЁГ­ГЈГ°ГҐГ¤ГЁГҐГ­ГІГ»
+            recipe.AddTile(TileID.WorkBenches);       // ГЌГ  Г·ВёГ¬ ГЇГ°ГҐГ¤Г¬ГҐГІ ГЄГ°Г ГґГІГЁГІГ±Гї
+            recipe.SetResult(this, 10);             //Г°ГҐГ§ГіГ«ГјГІГ ГІ ГЄГ°Г ГґГІГ 
+            recipe.AddRecipe();              //Г‡Г ГЄГ Г­Г·ГЁГўГ ГҐГ¬ Г°ГҐГ¶ГҐГЇГІ
         }
     }
 }
