@@ -32,7 +32,7 @@ namespace jam.Projectiles
             {
                 projectile.ai[1] = projectile.velocity.X;
             }
-            projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
+            //projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
             
             if (!(projectile.ai[1] < 0.01f))
             {
