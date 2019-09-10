@@ -38,7 +38,7 @@ namespace jam.Projectiles
             {
                 projectile.ai[1] -= 0.01f;
             }
-            //projectile.velocity.X = projectile.ai[1];
+            projectile.velocity.X = projectile.ai[1];
 
             if (Main.rand.Next(2) == 0) // this is how many duspt particles will spawn
             {// DustID.Fire is a vanilla terrraria dust, change it to what you like. To add a modded dust the change DustID.Fire with mod.DustType("DustName")
