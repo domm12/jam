@@ -21,15 +21,17 @@ namespace jam.Projectiles
             projectile.timeLeft = 200;
             projectile.light = 1.5f;
             projectile.tileCollide = true;
+            aiType = 376;
+            aiStyle = 0;
         }
-        public override void AI()
+        /*public override void AI()
         {
             projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
             if (Main.rand.Next(2) == 0) // this is how many duspt particles will spawn
             {// DustID.Fire is a vanilla terrraria dust, change it to what you like. To add a modded dust the change DustID.Fire with mod.DustType("DustName")
                 Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 6, projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
             }
-        }
+        }*/
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
             target.AddBuff(189, 80); 
