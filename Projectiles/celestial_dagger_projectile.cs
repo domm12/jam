@@ -55,6 +55,7 @@ namespace jam.Projectiles
             int proj = Projectile.NewProjectile(projectile.position.X, projectile.position.Y - 300f, 0, 10, ProjectileID.HarpyFeather, (int)(20), projectile.knockBack, Main.myPlayer); // This spawns a projectile after this projectile is dead
             Main.projectile[proj].friendly = true;
             Main.projectile[proj].timeLeft = 150;
+            Main.projectile[proj].tileCollide = false;
         }
     }
 }
