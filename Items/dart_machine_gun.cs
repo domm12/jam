@@ -22,8 +22,8 @@ namespace jam.Items
             item.ranged = true;
             item.width = 40;
             item.height = 20;
-            item.useTime = 8;
-            item.useAnimation = 20;
+            item.useTime = 12;
+            item.useAnimation = 12;
             item.useStyle = 5;
             item.noMelee = true; //so the item's animation doesn't do damage
             item.knockBack = 2;
