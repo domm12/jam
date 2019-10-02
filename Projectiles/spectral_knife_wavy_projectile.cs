@@ -30,9 +30,9 @@ namespace jam.Projectiles
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) //When you hit an NPC
         { 
 
-            Projectile.NewProjectile(projectile.position.X + 70f, projectile.position.Y, -6, 2, mod.ProjectileType("spectral_knife_projectile"), (int)(20), projectile.knockBack, Main.myPlayer);
+            Projectile.NewProjectile(projectile.position.X , projectile.position.Y, -6, 2, mod.ProjectileType("spectral_knife_projectile"), (int)(20), projectile.knockBack, Main.myPlayer);
 
-            Projectile.NewProjectile(projectile.position.X + 70f, projectile.position.Y, -6, -2, mod.ProjectileType("spectral_knife_projectile"), (int)(20), projectile.knockBack, Main.myPlayer);
+            Projectile.NewProjectile(projectile.position.X , projectile.position.Y, -6, -2, mod.ProjectileType("spectral_knife_projectile"), (int)(20), projectile.knockBack, Main.myPlayer);
 
             projectile.Kill();
         }
