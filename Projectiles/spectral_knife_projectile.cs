@@ -18,11 +18,12 @@ namespace jam.Projectiles
             projectile.height = 16;
             projectile.friendly = true;
             projectile.thrown = true;
-            projectile.penetrate = 2;      //this is how many enemy this projectile penetrate before desapear
+            projectile.penetrate = 1;      //this is how many enemy this projectile penetrate before desapear
             projectile.extraUpdates = 1;
             projectile.timeLeft = 250;
             projectile.light = 1f;
             projectile.tileCollide = false;
+            projectile.alpha = 160;
         }
         public override void AI()
         {
