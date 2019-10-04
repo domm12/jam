@@ -12,7 +12,7 @@ namespace jam.Items
     {
         public override void SetDefaults()
         {
-            item.damage = 20;           //this is the item damage
+            item.damage = 40;           //this is the item damage
             item.thrown = true;             //this make the item do throwing damage
             item.noMelee = true;
             item.width = 38;
