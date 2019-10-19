@@ -22,7 +22,7 @@ namespace jam.Projectiles
             projectile.light = 1.5f;
             projectile.tileCollide = true;
             aiType = 376;
-            aiStyle = 0;
+            projectile.aiStyle = 0;
         }
         /*public override void AI()
         {
