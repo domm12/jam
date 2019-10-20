@@ -13,7 +13,7 @@ namespace jam.Items.Armor
             base.SetStaticDefaults();
             DisplayName.SetDefault("Harpy head");
             Tooltip.SetDefault("Increases all damage by 6%. Increases magic damage by 6%"
-                + "\nThese are just feathers, how can they protect?");
+                + "\nThese are just feathers, how can they protect you?");
         }
 
         public override void SetDefaults()
