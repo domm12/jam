@@ -19,7 +19,6 @@ namespace jam.Buffs
         public override void Update(Player player, ref int buffIndex)
         {
             player.poisoned = true;
-            MyPlayer.isRadioactive = true;
             player.AddBuff(BuffID.Shine, 1);
         }
     }
