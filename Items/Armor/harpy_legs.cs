@@ -12,7 +12,7 @@ namespace jam.Items.Armor
             base.SetStaticDefaults();
             DisplayName.SetDefault("Harpy leggings");
             Tooltip.SetDefault("Increases all damage by 5%. Increases mininons and ranged damage by 7%. Increaces speed by 6%"
-                + "\nThese are just feathers, how can they protect?");
+                + "\nThese are just feathers, how can they protect you?");
         }
 
         public override void SetDefaults()
