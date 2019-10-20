@@ -12,7 +12,7 @@ namespace jam.Items.Armor
             base.SetStaticDefaults();
             DisplayName.SetDefault("Harpy breastplate");
             Tooltip.SetDefault("Increases all damage by 5%. Increases melee speed by 13%. Increaces max minions by 1"
-                + "\nThese are just feathers, how can they protect?");
+                + "\nThese are just feathers, how can they protect you?");
         }
 
         public override void SetDefaults()
